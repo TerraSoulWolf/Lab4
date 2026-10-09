@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function calculate()
+            {
+                // Calculating the total
+                let count = Number(document.getElementById("count").value)
+                let price = Number(document.getElementById("price").value)
+                let result = count * price
+                // Displaying the value
+                document.getElementById("result").innerHTML = "That'll cost $" + result + "! But it'll be worth it!"
+            }
+        </script>
+    </head>
+
+    <body>
+        <!--Main Website Content-->
+        <div>
+            <h1>Sushi Cost Calculator</h1>
+            <p>How many sushi rolls can you eat?</p>
+            <input id="count">
+            <p>How much is each roll? Like we talkin' California or Toro?</p>
+            <input id="price">
+            <p id="result"></p>
+            <button onclick=calculate()>Calculate Total</button>
+            <p>------------------------</p>
+        </div>
+        <!--An Image-->
+        <img src="https://www.craftycookbook.com/wp-content/uploads/2024/03/tobiko-roll-1200-500x500.jpg">
+    </body>
+</html>
